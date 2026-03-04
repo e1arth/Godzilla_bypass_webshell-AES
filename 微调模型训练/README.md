@@ -1,4 +1,4 @@
-# PHP Webshell 检测研究
+# PHP Webshell 对抗检测 研究
 本仓库记录了一个用于 PHP Webshell 检测的实用工作流：
 
 在 PHP Webshell 数据集上微调 Qwen/Qwen2-0.5B-Instruct 模型
