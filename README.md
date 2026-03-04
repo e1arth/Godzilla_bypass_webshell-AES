@@ -1,8 +1,8 @@
-# Godzilla_AES加密器_以及基于Channel-Stitch的webshell payload生成和Qwen2-0.5B-Instruc-webshell微调小模型检测方法与实施。
+# Godzilla_AES加密器_以及基于Channel-Stitch的webshell payload生成和Qwen2-0.5B-Instruc-webshell微调小模型检测方法与对抗。
 基于哥斯拉底层反射的自定义AES通信插件，phpwebshell则基于Channel-Stitch生成
 
 本项目主要是因为哥斯拉原生默认流量加密在过去几年被标记的太狠了。重新写了个AES的加密器，以及webshell的荷载生成。
-## 本项目生成的荷载在Qwen2-0.5B-Instruct模型中经过30k webshell数据集训练微调后的小模型分析，并未命中，同时在长亭、阿里等webshell检测中也未命中。
+## 本项目生成的荷载在Qwen2-0.5B-Instruct模型中经过30k webshell数据集训练微调后的小模型分析，并未命中。同时在长亭、阿里等产品的webshell检测中也完美绕过。
 对于训练结果有疑虑可阅读：[Qwen2-0.5B-Instruc-webshell微调模型检测训练](./微调模型训练/README.md) 注：该图展示的样本是二次过滤后的全量恶意样本，选了40+能过waf的phpwebshell进行测试。并不代表全量训练数据集，全量数据集采用了https://huggingface.co/datasets/nbuser32/PHP-Webshell-Dataset
 
 <img width="2589" height="729" alt="b02a5230965decbd5961bc86453f3b47" src="https://github.com/user-attachments/assets/90c0cec6-ab67-411e-923d-fe0ee1ee34a7" />
