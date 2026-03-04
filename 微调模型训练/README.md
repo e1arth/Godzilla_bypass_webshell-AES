@@ -47,7 +47,7 @@ fused_score = w_model * model_prob + w_rule * rule_prob
   生成 `channel_stitch_sim` 样本
 - `tools/generate_crypto_reflect_fixture.py`  
   生成 `crypto_reflect_c2_sim` 样本
-  Evaluate detector output against manifest files.
+  
 
 使用到的数据集/
 - `[nbuser32/PHP-Webshell-Dataset](https://huggingface.co/datasets/nbuser32/PHP-Webshell-Dataset)`  
