@@ -5,12 +5,13 @@
 ## 本项目生成的荷载在Qwen2-0.5B-Instruct模型中经过30k webshell数据集训练微调后的小模型分析，并未命中，同时在长亭、阿里等webshell检测中也未命中。
 对于训练结果有疑虑可阅读：[Qwen2-0.5B-Instruc-webshell微调模型检测训练](./Godzilla_AES_webshell-Channel-Stitch/微调模型训练/README.md)
 <img width="2589" height="729" alt="b02a5230965decbd5961bc86453f3b47" src="https://github.com/user-attachments/assets/90c0cec6-ab67-411e-923d-fe0ee1ee34a7" />
+<img width="1475" height="988" alt="3bc783e05921d57cf1c09265b93cf6fa" src="https://github.com/user-attachments/assets/4420ad22-4915-4781-bf01-cfcd5e33ad50" />
 
 ---- 
 XOR在静态中太显眼而且会被解开分析，想了下还是用AES，毕竟现在静态完善的太狠了。
 
-无文件落地，零驻留内存解密执行，临时产生短暂随机缓存文件后瞬间自毁，规避长效静态监测。
-
+核心：无文件落地，零驻留内存解密执行，临时产生短暂随机缓存文件后瞬间自毁，规避长效静态监测。
+---- 
 长亭：
 <img width="2767" height="1376" alt="8e6f29ea85008ff0594cc713b558c421" src="https://github.com/user-attachments/assets/6cebe93a-166a-45f4-9ec3-f35738970f4c" />
 
