@@ -110,6 +110,8 @@ fused_score >= 0.95 -> webshell，high，block
 - Add hard-benign samples to reduce over-sensitivity.
 - Calibrate thresholds with production-like traffic.
 - Add CI checks for regression on precision/recall/FPR.
+
+-----
 - 本项目仅用于授权安全研究与防御测试
 - 不应将样本直接用于任何未授权环境
 - 生产落地需保留审计日志与人工复核通道
